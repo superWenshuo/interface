@@ -1,7 +1,8 @@
 #coding=utf-8  
 import os
 import sys
-sys.path.append('/root/.jenkins/workspace/test')
+print (sys.path)
+# sys.path.append('/root/.jenkins/workspace/test')
 import unittest
 from common.excel import read_excel
 from common import base
