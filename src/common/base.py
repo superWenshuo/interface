@@ -63,10 +63,9 @@ class RunMethod:
 
     
     def get_case_url(self):
-            #当前路径的父包
+        #当前路径的父包
         p =os.path.abspath('..')
         print(p)
- 
         excelPath=lambda x:os.path.join(p, "data", x)
         print(excelPath('DaoLend_case1.xlsx'))
         return excelPath('DaoLend_case1.xlsx')
