@@ -4,7 +4,8 @@ import os
 import unittest
 from common.excel import read_excel
 from common import base
-
+import sys
+sys.path.appent('/root/.jenkins/workspace/test')
 class TestRun(unittest.TestCase):
     
 
