@@ -1,8 +1,15 @@
 #coding=utf-8  
 import os
+#jenkins运行项目需要添加sys.path.append
 import sys
 print (sys.path)
-# sys.path.append('/root/.jenkins/workspace/test')
+sys.path.append('/root/.jenkins/workspace/test/src/test')
+
+
+
+
+
+
 import unittest
 from common.excel import read_excel
 from common import base
