@@ -3,14 +3,14 @@
 import sys
 sys.path.append('/root/.jenkins/workspace/test/src')
 import unittest
-from common.excel import read_excel
-from common import base
+# import common
+from common import base,excel
 
 class TestRun(unittest.TestCase):
     
 
     def run(self):
-        read_excel(base.RunMethod().get_case_url())
+        excel.read_excel(base.RunMethod().get_case_url())
         #执行测试用例
         
  
