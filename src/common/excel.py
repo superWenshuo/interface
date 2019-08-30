@@ -143,7 +143,7 @@ def copy_excel(file_path,real_results,res_flags):
         print('{}/{}_测试结果.xls'.format(excel_path1,time.strftime('%Y%m%d%H%M%S')))
         new_book.save('{}/{}_测试结果.xls'.format(excel_path1,time.strftime('%Y%m%d%H%M%S'))) 
         #jenkins附件excel，name固定
-        new_book.save('{}/jenkins_测试结果.xls'.format(excel_path1)) 
+        new_book.save('{}/jenkins_case.xls'.format(excel_path1)) 
 
 def check(a,b):
     '''
