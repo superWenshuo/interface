@@ -69,4 +69,3 @@ class RunMethod:
         excelPath=lambda x:os.path.join(p, "data", x)
         print(excelPath('DaoLend_case1.xlsx'))
         return excelPath('DaoLend_case1.xlsx')
-  

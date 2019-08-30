@@ -9,7 +9,6 @@ import xlrd,time
 from common import base
 import os
 from common.base import RunMethod
-from common import base
 # import common.base.RunMethod.test_api
 
 #读取excel值
@@ -143,7 +142,8 @@ def copy_excel(file_path,real_results,res_flags):
         excel_path1=os.path.join(excel_path, "excel_result")   
         print('{}/{}_测试结果.xls'.format(excel_path1,time.strftime('%Y%m%d%H%M%S')))
         new_book.save('{}/{}_测试结果.xls'.format(excel_path1,time.strftime('%Y%m%d%H%M%S'))) 
-
+        #jenkins附件excel，name固定
+        new_book.save('{}/jenkins_测试结果.xls'.format(excel_path1)) 
 
 def check(a,b):
     '''
